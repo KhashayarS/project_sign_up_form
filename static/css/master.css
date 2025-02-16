@@ -1,0 +1,165 @@
+html, body, div, ol, ul, li, fieldset, form, legend {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* inherits the browser's font properties: font-size 16px */
+    font: inherit;
+    /*  specifies the vertical alignment of an inline element */
+    vertical-align: baseline;
+
+    box-sizing: border-box;
+
+    /*  specifies the height of line boxes within the element. */
+    line-height: 1;
+
+    border-radius: 0;
+
+    /* no outline around anything */
+    outline: none;
+}
+
+ol, ul {
+    /* no bullets in lists */
+    list-style: none;
+}
+
+a {
+    /* the color of the font for anchor tags is inherited */
+    color: inherit;
+    /* no underline */
+    text-decoration: none;
+}
+
+button {
+    /* turn the cursor into a pointing finger */
+    cursor: pointer;
+}
+
+blockquote, q {
+    /* no quotes */
+    quotes: none;
+}
+
+table {
+    /* no spacing between cells*/
+    border-spacing: 0;
+    /*borders are collapsed - adjacent table cells share borders */
+    border-collapse: collapse;
+}
+
+/* specific css */
+@font-face {
+    font-family: 'Norse';
+    src: url('../fonts/Norse-Bold.woff2') format('woff2'),
+        url('../fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    height: 100vh;
+    background-color: #eee;
+    font-family: sans-serif;
+}
+
+div.main {
+    display: flex;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+.sidebar_logo_left {
+    width: 30%;
+    border: 1px solid hotpink;
+    color: #fff;
+    background-image: url('../images/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+}
+
+.sidebar_container {
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    width: 100%;
+    margin-top: 40%;
+    background: rgba(32, 32, 32, 0.3);
+    padding: 10px;
+}
+
+img.brand_logo {
+    width: 80px;
+    height:fit-content;
+}
+
+h1.brand_name {
+    font-family: 'Norse';
+    font-size: 4em;
+}
+
+.main_content_right {
+    padding: 40px 0;
+}
+
+.top_description {
+    padding: 40px 20px;
+    font-weight: bold;   
+}
+
+.form_main {
+    border: 1px solid hotpink;
+    background-color: #fff;
+    padding: 0 20px;
+
+}
+
+.form_input_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single_input_container {
+    /* border: 1px solid blue; */
+    position: relative;
+    margin: 10px 20px;
+}
+
+.single_input_container label {
+    position: absolute;
+    top: -10px;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #eee;
+    border-radius: 2px;
+    width: 200px;
+    appearance: none;
+}
+
+input:focus, input:focus-visible {
+    border: 1px solid blue !important;
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.button_container {
+    padding: 40px;
+    border: 1px solid yellow;
+}
+
+.button_container button {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(41, 78, 41);
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: #999 2px 2px 5px;
+}
