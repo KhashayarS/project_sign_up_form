@@ -66,16 +66,17 @@ body {
 div.main {
     display: flex;
     height: 100%;
-    border: 2px solid blue;
 }
 
 .sidebar_logo_left {
-    width: 30%;
-    border: 1px solid hotpink;
+    width: 40%;
     color: #fff;
     background-image: url('../images/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: auto 100%;
     background-repeat: repeat-x;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sidebar_container {
@@ -84,7 +85,7 @@ div.main {
     align-items: center;
     width: 100%;
     margin-top: 40%;
-    background: rgba(32, 32, 32, 0.3);
+    background: rgba(124, 114, 114, 0.3);
     padding: 10px;
 }
 
@@ -98,6 +99,11 @@ h1.brand_name {
     font-size: 4em;
 }
 
+.photo_copyright {
+    font-size: 10px;
+    text-align: center;
+}
+
 .main_content_right {
     padding: 40px 0;
 }
@@ -108,10 +114,13 @@ h1.brand_name {
 }
 
 .form_main {
-    border: 1px solid hotpink;
     background-color: #fff;
-    padding: 0 20px;
+    padding: 5px 20px;
+}
 
+p.table_header {
+    padding: 10px 0;
+    margin: 20px 10px;
 }
 
 .form_input_container {
@@ -120,9 +129,8 @@ h1.brand_name {
 }
 
 .single_input_container {
-    /* border: 1px solid blue; */
     position: relative;
-    margin: 10px 20px;
+    margin: 10px 10px;
 }
 
 .single_input_container label {
@@ -139,9 +147,9 @@ input {
     appearance: none;
 }
 
-input:focus, input:focus-visible {
-    border: 1px solid blue !important;
-    background-color: rgba(0, 0, 255, 0.1);
+input:focus {
+    border: 1px solid blue;
+    outline: none;
 }
 
 input:invalid {
@@ -150,7 +158,6 @@ input:invalid {
 
 .button_container {
     padding: 40px;
-    border: 1px solid yellow;
 }
 
 .button_container button {
@@ -162,4 +169,8 @@ input:invalid {
     border: none;
     border-radius: 5px;
     box-shadow: #999 2px 2px 5px;
+}
+
+a.login_link {
+    color: rgb(41, 78, 41);
 }
